@@ -7,40 +7,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>產品列表頁</title>
   <link rel="stylesheet" href="./assets/style/scss/all.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 
 <body>
-  <header>
-      <h1 class="logo"> <!--不知道怎樣用oocss的方式命名-->
-        <a href="index.html"></a>
+  <header class="container">
+    <nav class="navbar">
+      <h1 class="logo">
+        <!--不知道怎樣用oocss的方式命名-->
+        <a href="index.html">D'Perfume</a>
       </h1>
-      <nav class="col-lg-5 col-md-6 offset-lg-5 offset-md-6">
-        <ul>
-          <li>
-            <a href="product-list.html">Product</a>
-          </li>
-          <li>
-            <a href="login.html">log in</a>
-          </li>
-          <li>
-            <a href="wish-list.html">Wishlist</a>
-          </li>
-          <li>
-            <a href="cart.html">Cart(3)</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav">
+        <li class="ml-4">
+          <a href="product-list.html" class="text-secondary d-lg-inline-flex">
+            <span class="material-icons">
+              store_mall_directory
+            </span>
+            Product
+          </a>
+        </li>
+        <li class="ml-4">
+          <a href="login.html" class="text-secondary d-lg-inline-flex">
+            <span class="material-icons">
+              person
+            </span>
+            log in
+          </a>
+        </li>
+        <li class="ml-4">
+          <a href="wish-list.html" class="text-secondary d-lg-inline-flex">
+            <span class="material-icons">
+              favorite
+            </span>
+            Wishlist
+          </a>
+        </li>
+        <li class="ml-4">
+          <a href="cart.html" class="text-secondary d-lg-inline-flex">
+            <span class="material-icons">
+              shopping_cart
+            </span>
+            Cart(3)
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
   </header>
 
   
-<h1>
-  這是一段話
-</h1>
 
-<div class="box"></div>
 
   <footer>
-    footer
+    <nav class="navbar">
+      
+    </nav>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
