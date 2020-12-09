@@ -10317,4 +10317,13 @@ ul, ol {
     .product-list-img {
       height: 255px; } }
 
+.product-number-btn {
+  text-align: left !important;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.cart-border-radius {
+  border-radius: 4px; }
+
 /*# sourceMappingURL=all.css.map */
