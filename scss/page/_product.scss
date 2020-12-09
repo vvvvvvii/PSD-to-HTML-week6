@@ -1,0 +1,20 @@
+.company-nav-py{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.product-nav-mb{
+    margin-bottom: 58px;
+}
+
+.product-list-img{
+    height: 165px;
+    object-fit: cover;
+    object-position: center;
+    @media(min-width:768px){
+        height: 200px;
+    }
+    @media(min-width:992px){
+        height: 255px;
+    }
+}
