@@ -10307,15 +10307,21 @@ ul, ol {
 .product-list-img {
   height: 165px;
   -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center; }
+     object-fit: cover; }
   @media (min-width: 768px) {
     .product-list-img {
       height: 200px; } }
   @media (min-width: 992px) {
     .product-list-img {
       height: 255px; } }
+
+.object-position-center {
+  -o-object-position: center;
+     object-position: center; }
+
+.object-position-fill {
+  -o-object-position: fill;
+     object-position: fill; }
 
 .product-number-btn {
   text-align: left !important;
