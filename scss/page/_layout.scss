@@ -1,0 +1,25 @@
+.logo{
+    width: 128px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo a{
+    display: block;
+    @include hide-text;
+}
+
+.topLogo{
+    background-image: url("https://github.com/vvvvvvii/PSD-to-HTML-week6/blob/main/assets/images/d%E2%80%99Perfume.png?raw=true");
+}
+
+.absolute-top-center{
+    top: 12px;
+    left: 50%;
+}
+
+.footerLogo{
+    background-image: url('https://github.com/vvvvvvii/PSD-to-HTML-week6/blob/main/assets/images/d%E2%80%99Perfumew.png?raw=true');
+}
+
