@@ -1,0 +1,135 @@
+.bg-top-banner{
+    height: 480px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 101px;
+    padding-bottom: 135px;
+    @media(min-width:768px){
+        height: 870px;
+        padding-top: 295px;
+        padding-bottom: 295px;   
+    }
+}
+
+.bg-footer-banner{
+    height: 600px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 312px; 
+    padding-bottom: 112px;
+}
+
+.default-btn{
+    color: $default;
+    font-size: 28px;
+    border: 2px solid $default;
+    border-radius: 30px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 0;
+    padding-left: 0;
+    @media(min-width:768px){
+        width: auto;
+        padding-right: 106px;
+        padding-left: 106px;
+    }
+    &:hover{
+        color: $gray-400;
+        border: 2px solid $gray-400;
+        background: transparent;
+    }
+}
+
+.accent-btn{
+    color: $accent;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid $accent;
+    border-radius: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 0;
+    padding-left: 0;
+    @media(min-width:768px){
+        width: auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    &:hover{
+        color: $gray-600;
+        border: 2px solid $gray-600;
+        background: transparent;
+    }
+}
+
+.square{
+    @include square;
+}
+
+.square img{
+    @include square-img;
+}
+
+.square-img{
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    @media(min-width:768px){
+        height: 600px;
+    }
+    @media(min-width:992px){
+        height: 555px;
+    }
+}
+
+.info-card{
+    width: 100%;
+    @media(min-width:992px){
+        width: 63.63%; 
+    }
+}
+
+.lg-rectangle-img{
+    height: 680px;
+    @media(min-width:992px){
+        height: 1080px;
+    }
+}
+
+.sm-rectangle-img{
+    height: 450px;
+    @media(min-width:768px){
+        height: 380px;
+    }
+    @media(min-width:992px){
+        height: 540px;
+    }
+}
+
+.recyle-project-img{
+    height: 520px;
+    @media(min-width:768px){
+        height: 350px;
+    }
+    @media(min-width:992px){
+        height: 520px;
+    }
+}
+
+.sold-out-img{
+    opacity: 70%;
+}
+
+.sold-out-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
