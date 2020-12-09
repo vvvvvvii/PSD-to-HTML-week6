@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -10124,6 +10125,10 @@ a.text-dark-primary:hover, a.text-dark-primary:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.display-inline-middle {
+  display: inline;
+  vertical-align: middle; }
+
 body {
   font-size: 16px; }
 
@@ -10220,6 +10225,24 @@ ul, ol {
     border: 2px solid #6c757d;
     background: transparent; }
 
+.square {
+  /*子層 div、img 等等...需使用 position absolute，可讓div變成正方形*/
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%; }
+
+.square img {
+  /*需搭配.square使用，讓圖片自動填滿div大小，若圖片本來就大於div則只顯示中間部分*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .square-img {
   height: 350px;
   -o-object-fit: cover;
@@ -10280,5 +10303,18 @@ ul, ol {
 
 .product-nav-mb {
   margin-bottom: 58px; }
+
+.product-list-img {
+  height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center; }
+  @media (min-width: 768px) {
+    .product-list-img {
+      height: 200px; } }
+  @media (min-width: 992px) {
+    .product-list-img {
+      height: 255px; } }
 
 /*# sourceMappingURL=all.css.map */
