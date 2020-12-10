@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>會員登入</title>
+  <link rel="stylesheet" href="./assets/style/scss/all.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+  <header class="bg-default sticky-top">
+    <div class="container">
+      <nav class="navbar py-1">
+        <h1 class="logo topLogo"> <!--不知道怎樣用oocss的方式命名-->
+          <a href="index.html">D'Perfume</a>
+        </h1>
+        <a class="btn ml-auto text-secondary position-relative d-inline-block d-md-none">
+          <span class="material-icons mr-1 vertical-middle">shopping_cart</span>
+          <span class="badge badge-pill badge-primary position-absolute absolute-top-center">3</span>
+        </a>
+        <ul class="nav d-none d-md-flex">
+          <li>
+            <a href="product-list.html" class="nav-link d-flex align-items-center text-secondary h5-lg h6-md">
+              <span class="material-icons">
+                store_mall_directory
+              </span>
+              Product
+            </a>
+          </li>
+          <li class="ml-lg-6 ml-md-5">
+            <a href="login.html" class="nav-link d-flex align-items-center text-secondary h5-lg h6-md">
+              <span class="material-icons">
+                person
+              </span>
+               log in  
+            </a>
+          </li>
+          <li class="ml-lg-6 ml-md-5">
+            <a href="wish-list.html" class="nav-link d-flex align-items-center text-secondary h5-lg h6-md">
+              <span class="material-icons">
+                favorite
+              </span>
+              Wishlist
+            </a>
+          </li>
+          <li class="ml-lg-6 ml-md-5">
+            <a href="cart.html" class="nav-link d-flex align-items-center text-secondary h5-lg h6-md">
+              <span class="material-icons">
+                shopping_cart
+              </span>
+              Cart(3)
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler p-0 border-0 collapsed text-secondary d-md-none" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">menu</span>      
+        </button>
+        <div class="navbar-collapse collapse" id="navbarToggle">
+          <ul class="navbar-nav d-block d-lg-none">
+            <li>
+              <a href="product-list.html" class="btn btn-secondary w-100 rounded-0 text-center text-default border-bottom">Product</a>
+            </li>
+            <li>
+              <a href="wishlist.html" class="btn btn-secondary w-100 rounded-0 text-center text-default border-bottom">Wishlist</a>
+            </li>
+            <li>
+              <a href="blog.html" class="btn btn-secondary w-100 rounded-0 text-center text-default border-bottom">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html" class="btn btn-secondary w-100 rounded-0 text-center text-default border-bottom">Contact</a>
+            </li>
+            <li>
+              <a href="login.html" class="btn btn-secondary w-100 rounded-0 text-center text-default border-bottom">log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>  
+    </div>
+  </header>
+
+  <div class="container py-md-10 pt-8 pb-11">
+    <div class="row align-items-center">
+        <div class="col-lg-8 col-md-6 col-12 mb-md-0 mb-4">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true" alt="login">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <h2 class="mb-1">
+                Log in
+            </h2>
+            <form>
+                <div class="form-group mb-3">
+                  <label for="loginInputEmail">帳號</label>
+                  <input type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="email@example.com">
+                </div>
+                <div class="form-group mb-7">
+                  <label for="loginInputPassword">密碼</label>
+                  <input type="password" class="form-control" id="loginInputPassword" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="text-primary">忘記密碼</p>
+                    <div>
+                        <a class="btn btn-default border-primary text-primary">註冊</a>
+                        <a href="member-center.html" class="btn btn-primary">登入</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <footer class="bg-primary">
+    <div class="container">
+      <nav class="navbar">
+        <div class="w-100 w-md-auto d-flex align-items-center justify-content-md-start justify-content-between">
+          <h4 class="logo footerLogo"> <!--不知道怎樣用oocss的方式命名-->
+            <a href="index.html">D'Perfume</a>
+          </h4>
+          <p class="text-default ml-3">
+            © 2020. All Rights Reserved.
+          </p>
+        </div>
+        <ul class="nav py-4">
+          <li class="d-none d-md-block">
+            <a href="product-list.html" class="nav-link text-default d-lg-inline-flex h5-lg h6-md">
+              Product
+            </a>
+          </li>
+          <li class="ml-lg-7 ml-md-2 d-none d-md-block">
+            <a href="blog.html" class="nav-link text-default d-lg-inline-flex h5-lg h6-md">
+              Blog
+            </a>
+          </li>
+          <li class="ml-lg-7 ml-md-2 d-none d-md-block">
+            <a href="contact.html" class="nav-link text-default d-lg-inline-flex h5-lg h6-md">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
